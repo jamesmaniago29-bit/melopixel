@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeloPixel Playscape | Creative Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-100 font-poppins">
+    <!-- Navigation Component -->
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
+        <div class="particles absolute inset-0 z-0"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-violet-500">
+                Welcome to My Creative Space
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                Where <span class="typing-text text-cyan-400">music explorer 🎵</span> Meet
+            </p>
+            <a href="#interests" class="magnetic-button inline-block px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-medium text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                Start Exploring
+            </a>
+        </div>
+        <div class="floating-icons">
+            <i data-feather="music" class="floating-icon icon-1"></i>
+            <i data-feather="pen-tool" class="floating-icon icon-2"></i>
+            <i data-feather="cpu" class="floating-icon icon-3"></i>
+            <i data-feather="book" class="floating-icon icon-4"></i>
+        </div>
+    </section>
+
+    <!-- Interests Sections -->
+    <section id="interests" class="py-20 px-4 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-violet-500">My Creative Domains</span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Music Card -->
+            <div class="interest-card group" data-category="music">
+                <div class="card-inner">
+                    <div class="card-front bg-gray-800 p-6 rounded-2xl border border-gray-700">
+                        <div class="icon-container mb-6 w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-500/20 flex items-center justify-center">
+                            <i data-feather="music" class="w-8 h-8 text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-center">Sounds I Love</h3>
+                        <p class="text-gray-400 text-center">OPM playlists, pop favorites, and musical discoveries</p>
+                    </div>
+                    <div class="card-back absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="mini-visualizer h-16 mb-4 flex items-end gap-1">
+                            <span class="visualizer-bar w-2 bg-cyan-400 rounded-t-full"></span>
+                            <span class="visualizer-bar w-2 bg-violet-500 rounded-t-full"></span>
+                            <span class="visualizer-bar w-2 bg-cyan-400 rounded-t-full"></span>
+                            <span class="visualizer-bar w-2 bg-violet-500 rounded-t-full"></span>
+                            <span class="visualizer-bar w-2 bg-cyan-400 rounded-t-full"></span>
+                        </div>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-center"><i data-feather="heart" class="w-4 h-4 mr-2 text-pink-400"></i> Cup of Joe</li>
+                            <li class="flex items-center"><i data-feather="disc" class="w-4 h-4 mr-2 text-violet-400"></i> OPM Discoveries</li>
+                            <li class="flex items-center"><i data-feather="headphones" class="w-4 h-4 mr-2 text-cyan-400"></i> Pop Playlists</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Drawing Card -->
+            <div class="interest-card group" data-category="drawing">
+                <div class="card-inner">
+                    <div class="card-front bg-gray-800 p-6 rounded-2xl border border-gray-700">
+                        <div class="icon-container mb-6 w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-500/20 flex items-center justify-center">
+                            <i data-feather="pen-tool" class="w-8 h-8 text-violet-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-center">My Creative Corner</h3>
+                        <p class="text-gray-400 text-center">Exploring styles from anime to realism</p>
+                    </div>
+                    <div class="card-back absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="brush-animation mb-4">
+                            <div class="brush-stroke h-1 bg-gradient-to-r from-cyan-400 to-violet-500 rounded-full mb-1"></div>
+                            <div class="brush-stroke h-1 bg-gradient-to-r from-violet-500 to-cyan-400 rounded-full"></div>
+                        </div>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-center"><i data-feather="image" class="w-4 h-4 mr-2 text-violet-400"></i> Anime Style</li>
+                            <li class="flex items-center"><i data-feather="edit" class="w-4 h-4 mr-2 text-cyan-400"></i> Sketch Practice</li>
+                            <li class="flex items-center"><i data-feather="tablet" class="w-4 h-4 mr-2 text-violet-400"></i> Digital Art</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gaming Card -->
+            <div class="interest-card group" data-category="gaming">
+                <div class="card-inner">
+                    <div class="card-front bg-gray-800 p-6 rounded-2xl border border-gray-700">
+                        <div class="icon-container mb-6 w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-500/20 flex items-center justify-center">
+                            <i data-feather="cpu" class="w-8 h-8 text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-center">Games I Play</h3>
+                        <p class="text-gray-400 text-center">Popular titles that keep me engaged</p>
+                    </div>
+                    <div class="card-back absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="pixel-sparks flex justify-center mb-4">
+                            <div class="spark w-2 h-2 bg-cyan-400 mx-1"></div>
+                            <div class="spark w-2 h-2 bg-violet-500 mx-1"></div>
+                            <div class="spark w-2 h-2 bg-cyan-400 mx-1"></div>
+                        </div>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-center"><i data-feather="box" class="w-4 h-4 mr-2 text-cyan-400"></i> Genshin Impact</li>
+                            <li class="flex items-center"><i data-feather="target" class="w-4 h-4 mr-2 text-violet-400"></i> Valorant</li>
+                            <li class="flex items-center"><i data-feather="smartphone" class="w-4 h-4 mr-2 text-cyan-400"></i> Mobile Legends</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Learning Card -->
+            <div class="interest-card group" data-category="learning">
+                <div class="card-inner">
+                    <div class="card-front bg-gray-800 p-6 rounded-2xl border border-gray-700">
+                        <div class="icon-container mb-6 w-16 h-16 mx-auto rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-500/20 flex items-center justify-center">
+                            <i data-feather="book" class="w-8 h-8 text-violet-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-center">Learning Adventures</h3>
+                        <p class="text-gray-400 text-center">Skills I'm developing and exploring</p>
+                    </div>
+                    <div class="card-back absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="progress-bar-container mb-4">
+                            <div class="progress-label flex justify-between text-xs mb-1">
+                                <span>English</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-violet-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <ul class="text-sm space-y-2">
+                            <li class="flex items-center"><i data-feather="globe" class="w-4 h-4 mr-2 text-cyan-400"></i> English</li>
+                            <li class="flex items-center"><i data-feather="users" class="w-4 h-4 mr-2 text-violet-400"></i> Chess</li>
+                            <li class="flex items-center"><i data-feather="tool" class="w-4 h-4 mr-2 text-cyan-400"></i> PC Building</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="py-20 px-4 bg-gray-800/50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-violet-500">About The Creator</span>
+            </h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="relative group">
+                    <div class="circle-frame w-48 h-48 md:w-56 md:h-56 rounded-full bg-gradient-to-br from-cyan-400 to-violet-500 p-1">
+                        <img src="https://huggingface.co/spaces/Potatoes1003/melopixel-playscape/resolve/main/images/579010997_1902707887316531_5080882205100726240_n.jpg" alt="Profile" class="w-full h-full rounded-full object-cover">
+                    </div>
+<div class="absolute -inset-2 rounded-full bg-cyan-400 opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-300 z-0"></div>
+                </div>
+                
+                <div class="flex-1 bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700 group hover:border-cyan-400/30 transition-all duration-300">
+                    <p class="text-lg leading-relaxed mb-6">
+                        Hi! I'm someone who loves music, drawing, gaming, and learning new things.
+                        I enjoy OPM and pop artists like Cup of Joe, exploring new drawing styles, 
+                        playing well-known games, and constantly improving in areas like English, 
+                        chess, and building a PC. This blog is where I share everything I discover 
+                        along the way.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <div class="floating-tag bg-gray-700/50 px-4 py-2 rounded-full border border-cyan-400/20 flex items-center">
+                            <i data-feather="music" class="w-4 h-4 mr-2 text-cyan-400"></i>
+                            <span>Music Explorer</span>
+                        </div>
+                        <div class="floating-tag bg-gray-700/50 px-4 py-2 rounded-full border border-violet-500/20 flex items-center">
+                            <i data-feather="pen-tool" class="w-4 h-4 mr-2 text-violet-400"></i>
+                            <span>Artist</span>
+                        </div>
+                        <div class="floating-tag bg-gray-700/50 px-4 py-2 rounded-full border border-cyan-400/20 flex items-center">
+                            <i data-feather="cpu" class="w-4 h-4 mr-2 text-cyan-400"></i>
+                            <span>Gamer</span>
+                        </div>
+                        <div class="floating-tag bg-gray-700/50 px-4 py-2 rounded-full border border-violet-500/20 flex items-center">
+                            <i data-feather="book" class="w-4 h-4 mr-2 text-violet-400"></i>
+                            <span>Learner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts -->
+    <section class="py-20 px-4 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-16">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-violet-500">Featured Blog Posts</span>
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Music Post -->
+            <div class="post-card group" data-category="music">
+                <div class="relative overflow-hidden rounded-2xl h-64 mb-4">
+                    <img src="http://static.photos/music/640x360/1" alt="Music Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-6">
+                        <span class="category-tag bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm">Music</span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Discovering Cup of Joe</h3>
+                <p class="text-gray-400 mb-4">My journey through their discography and why they resonate with me</p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                    <span>June 15, 2023</span>
+                </div>
+            </div>
+            
+            <!-- Drawing Post -->
+            <div class="post-card group" data-category="drawing">
+                <div class="relative overflow-hidden rounded-2xl h-64 mb-4">
+                    <img src="http://static.photos/art/640x360/2" alt="Drawing Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-6">
+                        <span class="category-tag bg-violet-500/20 text-violet-400 px-3 py-1 rounded-full text-sm">Drawing</span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Anime Style Breakdown</h3>
+                <p class="text-gray-400 mb-4">Understanding the fundamentals of anime character design</p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                    <span>May 22, 2023</span>
+                </div>
+            </div>
+            
+            <!-- Gaming Post -->
+            <div class="post-card group" data-category="gaming">
+                <div class="relative overflow-hidden rounded-2xl h-64 mb-4">
+                    <img src="http://static.photos/gaming/640x360/3" alt="Gaming Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-6">
+                        <span class="category-tag bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm">Gaming</span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Genshin Impact Favorites</h3>
+                <p class="text-gray-400 mb-4">Characters and regions that captivate me in Teyvat</p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                    <span>April 10, 2023</span>
+                </div>
+            </div>
+            
+            <!-- Learning Post -->
+            <div class="post-card group" data-category="learning">
+                <div class="relative overflow-hidden rounded-2xl h-64 mb-4">
+                    <img src="http://static.photos/education/640x360/4" alt="Learning Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-6">
+                        <span class="category-tag bg-violet-500/20 text-violet-400 px-3 py-1 rounded-full text-sm">Learning</span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Building My First PC</h3>
+                <p class="text-gray-400 mb-4">Components, challenges, and lessons from the process</p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                    <span>March 5, 2023</span>
+                </div>
+            </div>
+            
+            <!-- Mixed Post -->
+            <div class="post-card group" data-category="drawing">
+                <div class="relative overflow-hidden rounded-2xl h-64 mb-4">
+                    <img src="http://static.photos/art/640x360/5" alt="Drawing Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-6">
+                        <span class="category-tag bg-violet-500/20 text-violet-400 px-3 py-1 rounded-full text-sm">Drawing</span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Digital vs Traditional</h3>
+                <p class="text-gray-400 mb-4">My experiences with both mediums and their unique challenges</p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                    <span>February 18, 2023</span>
+                </div>
+            </div>
+            
+            <!-- Learning Post -->
+            <div class="post-card group" data-category="learning">
+                <div class="relative overflow-hidden rounded-2xl h-64 mb-4">
+                    <img src="http://static.photos/education/640x360/6" alt="Learning Post" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-6">
+                        <span class="category-tag bg-violet-500/20 text-violet-400 px-3 py-1 rounded-full text-sm">Learning</span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Chess Opening Principles</h3>
+                <p class="text-gray-400 mb-4">Fundamental concepts I'm practicing as a beginner</p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                    <span>January 30, 2023</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sidebar Widgets -->
+    <section class="py-20 px-4 bg-gray-800/50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-violet-500">Interactive Widgets</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Now Playing Widget -->
+                <div class="widget-card bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-cyan-400/50 transition-colors duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i data-feather="music" class="w-5 h-5 mr-2 text-cyan-400"></i>
+                            Now Playing
+                        </h3>
+                        <span class="text-xs bg-cyan-500/20 text-cyan-400 px-2 py-1 rounded-full">OPM</span>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/music/200x200/7" alt="Album Cover" class="w-16 h-16 rounded-lg mr-4">
+                        <div>
+                            <h4 class="font-medium">Cup of Joe</h4>
+                            <p class="text-sm text-gray-400">Tingin</p>
+                        </div>
+                    </div>
+                    <div class="visualizer flex items-end h-12 gap-1">
+                        <span class="bar w-1 bg-cyan-400 rounded-t-full" style="height: 20%"></span>
+                        <span class="bar w-1 bg-violet-500 rounded-t-full" style="height: 50%"></span>
+                        <span class="bar w-1 bg-cyan-400 rounded-t-full" style="height: 80%"></span>
+                        <span class="bar w-1 bg-violet-500 rounded-t-full" style="height: 30%"></span>
+                        <span class="bar w-1 bg-cyan-400 rounded-t-full" style="height: 60%"></span>
+                        <span class="bar w-1 bg-violet-500 rounded-t-full" style="height: 40%"></span>
+                        <span class="bar w-1 bg-cyan-400 rounded-t-full" style="height: 90%"></span>
+                    </div>
+                </div>
+                
+                <!-- Drawing Prompt Widget -->
+                <div class="widget-card bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-violet-500/50 transition-colors duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i data-feather="pen-tool" class="w-5 h-5 mr-2 text-violet-400"></i>
+                            Drawing Prompt
+                        </h3>
+                        <button class="text-xs bg-violet-500/20 text-violet-400 px-2 py-1 rounded-full hover:bg-violet-500/30 transition-colors duration-200" id="new-prompt">
+                            New
+                        </button>
+                    </div>
+                    <div class="prompt-content">
+                        <p class="text-lg mb-2">"Draw a character with mismatched socks holding a cup of coffee"</p>
+                        <div class="flex items-center text-sm text-gray-500">
+                            <i data-feather="clock" class="w-4 h-4 mr-1"></i>
+                            <span>Today's Prompt</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Word of the Day Widget -->
+                <div class="widget-card bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-cyan-400/50 transition-colors duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i data-feather="book-open" class="w-5 h-5 mr-2 text-cyan-400"></i>
+                            Word of the Day
+                        </h3>
+                        <span class="text-xs bg-cyan-500/20 text-cyan-400 px-2 py-1 rounded-full">English</span>
+                    </div>
+                    <div class="word-content">
+                        <h4 class="text-xl font-medium mb-1">Serendipity</h4>
+                        <p class="text-sm text-gray-400 italic mb-2">/ˌserənˈdipədē/</p>
+                        <p class="text-sm">The occurrence of events by chance in a happy or beneficial way.</p>
+                        <div class="mt-4 flex items-center text-sm text-gray-500">
+                            <i data-feather="calendar" class="w-4 h-4 mr-1"></i>
+                            <span>July 12, 2023</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chess Puzzle Widget -->
+                <div class="widget-card bg-gray-800 p-6 rounded-2xl border border-gray-700 hover:border-violet-500/50 transition-colors duration-300">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i data-feather="award" class="w-5 h-5 mr-2 text-violet-400"></i>
+                            Daily Chess Puzzle
+                        </h3>
+                        <button class="text-xs bg-violet-500/20 text-violet-400 px-2 py-1 rounded-full hover:bg-violet-500/30 transition-colors duration-200" id="show-solution">
+                            Solution
+                        </button>
+                    </div>
+                    <div class="chessboard mb-4 grid grid-cols-8 gap-0 w-full aspect-square">
+                        <!-- Chessboard will be generated by JS -->
+                    </div>
+                    <p class="text-sm">White to move and win material</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <custom-footer></custom-footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-gradient-to-br from-cyan-500 to-violet-600 w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:scale-110">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Component Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    
+    <!-- Main Script -->
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
